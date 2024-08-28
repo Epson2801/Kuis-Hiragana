@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuis Hiragana</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Kuis Hiragana</h1>
+        <div id="question" class="fade"></div>
+        <input type="text" id="answer" placeholder="Masukkan jawaban">
+        <button onclick="checkAnswer()">Submit</button>
+        <div id="feedback"></div>
+    </div>
+    
+    <!-- Tambahkan elemen audio untuk sound effect -->
+    <audio id="correctSound" src="audio/correct.mp3" preload="auto"></audio>
+    <audio id="wrongSound" src="audio/wrong.mp3" preload="auto"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
